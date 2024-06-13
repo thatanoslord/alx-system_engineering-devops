@@ -1,1 +1,4 @@
-A README.md file at the root of the repo, containing a description of the repository
+# alx-system_engineering-devops
+
+This repository contains various scripts and projects related to system engineering and DevOps practices.
+
