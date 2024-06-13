@@ -1,10 +1,2 @@
 #!/bin/bash
-
-shopt -s nullglob
-
-for file in *.html; do
-    if [[ ! -e ../"$file" || "$file" -nt ../"$file" ]]; then
-        cp "$file" ../
-    fi
-done
-
+cp -un  *.html ../
