@@ -20,3 +20,7 @@ This script displays the last 10 lines of the `/etc/passwd` file.
 # 5-firstlines
 
 This script displays the first 10 lines of the `/etc/passwd` file.
+
+# 6-third_line
+
+This script displays the third line of the file `iacta`.
