@@ -1,0 +1,2 @@
+vi 16-whatsnext
+grep -A 3 "root" /etc/passwd
