@@ -1,6 +1,2 @@
 #!/bin/bash
-while IFS= read -r line; do
-    echo "$line"
-    # Read and ignore the next line
-    IFS= read -r _
-done
+paste -d, - - | cut -d, -fl1
