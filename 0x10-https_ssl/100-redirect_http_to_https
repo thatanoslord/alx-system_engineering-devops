@@ -44,7 +44,7 @@ frontend theonlysplinter-frontend
         bind *:80
         bind *:443 ssl crt /etc/haproxy/certs/theonlysplinter.tech.pem
         http-request set-header X-Forwarded-Proto https
-        default_backend iamitsfoss-backend
+        default_backend theonlysplinter-backend
 
 backend theonlysplinter-backend
         balance roundrobin
