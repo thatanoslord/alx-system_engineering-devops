@@ -41,12 +41,12 @@ frontend theonlysplinter-frontend
         default_backend theonlysplinter-backend
 
 frontend theonlysplinter-frontend
-    bind *:80
-    bind *:443 ssl crt /etc/haproxy/certs/theonlysplinter.tech.pem
-    http-request set-header X-Forwarded-Proto https
-    default_backend iamitsfoss-backend
+        bind *:80
+        bind *:443 ssl crt /etc/haproxy/certs/theonlysplinter.tech.pem
+        http-request set-header X-Forwarded-Proto https
+        default_backend iamitsfoss-backend
 
 backend theonlysplinter-backend
-    balance roundrobin
-    server 130022-web-01 3.90.80.121:80 check
-    server 130022-web-02 100.25.41.83:80 check
+        balance roundrobin
+        server 130022-web-01 3.90.80.121:80 check
+        server 130022-web-02 100.25.41.83:80 check
