@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Read /etc/passwd file and extract user names and home directories
+while IFS=':' read -r username password uid gid fullname homedir shell; do
+    # Print username and home directory
+    echo "$username:$homedir"
+done < /etc/passwd | sort -t ':' -k 1

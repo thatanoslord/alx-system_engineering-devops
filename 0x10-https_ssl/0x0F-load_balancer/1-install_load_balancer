@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#install load balancer
+
+sudo apt-get -y update 
+sudo apt-get -y instal haproxy
+sudo chown $USER:USER /etc/haproxy/haproxy.cfg
+
+echo "
+frontend theonlysplinter
+    bind *:80
+    mode http
+    default_backend app
+
+backend app
+    balance roundrobin
+    sever 806529-web-01 3.90.80.121:80 check
+    server 806529-web-02 54.165.10.115:80 check" >> /etc/haproxy/haproxy.cfg
+
+sudo service haproxy restart

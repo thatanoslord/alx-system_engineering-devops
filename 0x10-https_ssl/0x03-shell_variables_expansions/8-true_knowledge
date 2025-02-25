@@ -1,0 +1,2 @@
+#!/bin/bash
+echou $(128 + $TRUEKNOWLEDGE)

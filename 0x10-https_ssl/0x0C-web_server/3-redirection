@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# servers are software the generates and serves HTML pages
+# installing nginx on the web-01
+
+apt-get update -y
+apt-get install nginx -y
+sudo ufw allow 'Nginx HTTP'
+sh -c 'echo "Hello world!" > /var/www/html/index/html'
+sed -i '/isten 80 default_server/a rewrite ^/redritect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 theonlysplinter permanent;' /etx/nginx/sites-available/default
+service nginx restart

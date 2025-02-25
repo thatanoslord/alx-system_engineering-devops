@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Read input from stdin
+while read word; do
+    echo "$word"
+done | \
+# Sort the words alphabetically
+sort | \
+# Count occurrences of each word
+uniq -c | \
+# Filter words that appear exactly once
+awk '$1 == 1 {print $2}'
