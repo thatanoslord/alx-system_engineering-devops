@@ -3,7 +3,7 @@
 ## Issue Summary
 **Duration:** June 1, 2023, 08:00 AM - June 1, 2023, 11:30 AM (UTC)  
 **Impact:** The web application suffered a complete outage, rendering services inaccessible to all users. During this period, users encountered error messages and were unable to interact with any features or content.
-
+![Uploading System-Architecture-Diagram-1024x645.png…]()
 ## Timeline
 - **08:00 AM:** Monitoring alerts signaled a surge in server errors.
 - **08:05 AM:** The on-call engineering team was notified and began their investigation.
@@ -17,6 +17,7 @@
 ## Root Cause and Resolution
 ### Root Cause
 The outage stemmed from a misconfigured API integration introduced in a recent code update. This misconfiguration created an error loop within the application, ultimately leading to system-wide failure and an inability to process requests.
+
 
 ### Resolution
 The engineering team identified the erroneous code and promptly rolled it back to a stable version. This rollback rectified the misconfiguration, allowing the application to restore normal functionality.
