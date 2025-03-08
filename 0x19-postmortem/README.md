@@ -3,7 +3,7 @@
 ## Issue Summary
 **Duration:** June 1, 2023, 08:00 AM - June 1, 2023, 11:30 AM (UTC)  
 **Impact:** The web application suffered a complete outage, rendering services inaccessible to all users. During this period, users encountered error messages and were unable to interact with any features or content.
-![Uploading System-Architecture-Diagram-1024x645.png…]()
+
 ## Timeline
 - **08:00 AM:** Monitoring alerts signaled a surge in server errors.
 - **08:05 AM:** The on-call engineering team was notified and began their investigation.
